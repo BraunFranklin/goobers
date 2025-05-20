@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gooners - Bar & Grill, Minneapolis</title>
+    <style>
+        /* --- Reset & Basic Styles --- */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark blue-grey */
+        }
+
+        /* --- Header --- */
+        header {
+            background: #c0392b; /* A slightly muted, "Gooner" red */
+            color: #fff;
+            padding-top: 30px;
+            min-height: 80px;
+            border-bottom: #a93226 5px solid;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            color: #fff; /* Ensure h1 color is white for contrast */
+        }
+
+        header h1 .minneapolis {
+            font-size: 0.5em;
+            display: block;
+            letter-spacing: 1px;
+            font-weight: normal;
+            color: #fdebd0; /* Creamy off-white for subtitle */
+        }
+
+        /* --- Navigation --- */
+        nav {
+            background: #2c3e50; /* Dark blue-grey */
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover, nav .current a {
+            background-color: #e74c3c; /* Brighter red for hover/current */
+            border-radius: 5px;
+        }
+
+        /* --- Sections --- */
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* --- About Section --- */
+        #about p {
+            font-size: 1.1em;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        /* --- Menu Section --- */
+        #menu .menu-category {
+            margin-bottom: 40px;
+        }
+
+        #menu .menu-category h3 {
+            background: #34495e; /* Another shade of blue-grey */
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        #menu .menu-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        #menu .menu-item h4 {
+            margin: 0 0 5px 0;
+            color: #c0392b; /* Gooner red for item names */
+            font-size: 1.3em;
+        }
+
+        #menu .menu-item p {
+            margin: 0 0 10px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        #menu .menu-item .price {
+            font-weight: bold;
+            color: #27ae60; /* Green for price */
+            font-size: 1.1em;
+            float: right;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background: #1a1a1a; /* Very dark grey / almost black */
+            color: #ccc;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* --- Utility --- */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>GOONERS <span class="minneapolis">Bar & Grill - Minneapolis, MN</span></h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li class="current"><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Our Infamous Menu</a></li>
+                <li><a href="#contact">Contact (If You Dare)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to the Weird & Wonderful!</h2>
+            <p style="text-align:center; font-size: 1.2em;">You've stumbled upon Gooners, Minneapolis's best-kept secret (or perhaps its most openly bizarre culinary adventure). We pride ourselves on serving up dishes that will make you question everything you thought you knew about food. Come on in, grab a local brew, and prepare for an experience your tastebuds won't soon forget... for better or worse.</p>
+            <img src="https://via.placeholder.com/1200x400?text=Imagine+a+Quirky+Bar+Interior+Here" alt="Gooners Bar Interior Placeholder" style="width:100%; height:auto; margin-top:20px; border-radius:5px;">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Who Are These Gooners Anyway?</h2>
+            <p>Legend has it that Gooners was founded on a dare during a particularly harsh Minneapolis winter. Two friends, fueled by lukewarm coffee and an excess of tater tots, decided the city needed a place that wasn't afraid to be... different. We embrace the odd, the unconventional, and the downright strange. Our chefs (some call them culinary mad scientists) are escapees from the mundane, dedicated to crafting flavors that dance on the precipice of genius and "what were they thinking?!"</p>
+            <p>Nestled in the heart of Minneapolis, we're a haven for the adventurous eater, the curious connoisseur, and anyone who believes that a good meal should come with a great story. We source locally when we can, especially our pickles (you'll see why). We're a bit rough around the edges, just like a true Minnesotan after a blizzard, but we promise good times, strange bites, and maybe a new favorite dish you never knew you needed.</p>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <h2>Our Infamous Menu: Eat at Your Own Risk!</h2>
+
+            <div class="menu-category">
+                <h3>Questionable Starters (AKA "Appetizers")</h3>
+                <div class="menu-item clearfix">
+                    <span class="price">$12.99</span>
+                    <h4>Pickled Mystery Bites</h4>
+                    <p>We found some things in a jar. We pickled them. Served with a sauce that's equally enigmatic. Good luck!</p>
+                </div>
+                <div class="menu-item clearfix">
+                    <span class="price">$14.50</span>
+                    <h4>The "Is it Bacon?" Skewers</h4>
+                    <p>Strips of... something... marinated in maple syrup and regret, then grilled. Tastes surprisingly like existential dread, or maybe bacon. You decide.</p>
+                </div>
+                <div class="menu-item clearfix">
+                    <span class="price">$11.00</span>
+                    <h4>Cryogenic Cheese Curds</h4>
+                    <p>Minnesota cheese curds, flash-frozen in liquid nitrogen and served with a side of lukewarm "volcano" sauce. A temperature rollercoaster!</p>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Highly Suspect Mains (You Were Warned)</h3>
+                <div class="menu-item clearfix">
+                    <span class="price">$22.75</span>
+                    <h4>Lutefisk Tacos with Lingonberry Salsa (Seasonal Abomination)</h4>
+                    <p>Our nod to Minnesota heritage, taken to a place it never asked to go. Three corn tortillas filled with... well, lutefisk. The lingonberry salsa almost makes it palatable. Almost.</p>
+                </div>
+                <div class="menu-item clearfix">
+                    <span class="price">$19.99</span>
+                    <h4>The "What the Walleye?" Burger</h4>
+                    <p>A surprisingly normal walleye fillet, topped with peanut butter, jalapeño jelly, and a single, defiant Cheeto. Served on a charcoal bun because why not?</p>
+                </div>
+                <div class="menu-item clearfix">
+                    <span class="price">$25.00</span>
+                    <h4>Spaghetti & Gumball "Meatballs"</h4>
+                    <p>Al dente spaghetti tossed in a bewildered marinara, adorned with oversized gumballs (savory, we think?). Not recommended by dentists or Italians.</p>
+                </div>
+                <div class="menu-item clearfix">
+                    <span class="price">$21.50</span>
+                    <h4>Unidentified Frying Object (U.F.O.)</h4>
+                    <p>It's battered. It's deep-fried. What is it? Even we're not entirely sure some days. Comes with three dipping sauces of increasing spiciness and questionable origin.</p>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Dubious Desserts (Sweet Surrender?)</h3>
+                <div class="menu-item clearfix">
+                    <span class="price">$10.00</span>
+                    <h4>Roadkill Ripple Ice Cream</h4>
+                    <p>Vanilla ice cream swirled with "tire track" licorice caramel and "gravel" (chocolate-covered popping candy). Don't worry, it's (mostly) metaphoric.</p>
+                </div>
+                <div class="menu-item clearfix">
+                    <span class="price">$11.25</span>
+                    <h4>The Deconstructed Jell-O Salad Surprise</h4>
+                    <p>Lime Jell-O cubes, shredded carrots, miniature marshmallows, and a dollop of something vaguely creamy. Your grandma might recognize it, or run screaming.</p>
+                </div>
+                <div class="menu-item clearfix">
+                    <span class="price">$13.00</span>
+                    <h4>Mystery Flavor Pie Slice</h4>
+                    <p>Our baker gets creative. Flavors change daily, sometimes hourly. Could be blueberry. Could be beef stroganoff. Comes with a waiver.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Find Us (If You Dare...)</h2>
+            <p style="text-align:center;"><strong>Gooners Bar & Grill</strong><br>
+            123 Oddball Alley<br>
+            Minneapolis, MN 55401</p>
+            <p style="text-align:center;"><strong>Phone:</strong> (612) 555-GOON (4666)</p>
+            <p style="text-align:center;"><strong>Hours:</strong> We're probably open. Or maybe not. Try your luck!</p>
+            <p style="text-align:center;"><em>Reservations? Just show up. If there's space, it was meant to be.</em></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gooners Bar & Grill. All Rights Reserved (Probably).</p>
+            <p>Don't blame us, you chose to eat here.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
